@@ -24,9 +24,9 @@ class TrainConfig:
     CASE = str(ModelConfig.SEQ_LEN) + 'frames_ikala'
     CKPT_PATH = 'checkpoints/' + CASE
     GRAPH_PATH = 'graphs/' + CASE + '/train'
-    DATA_PATH = 'dataset/train/ikala'
+    DATA_PATH = 'dataset/mir-1k'
     LR = 0.0001
-    FINAL_STEP = 100000
+    FINAL_STEP = 100
     CKPT_STEP = 500
     NUM_WAVFILE = 1
     SECONDS = 8.192 # To get 512,512 in melspecto
@@ -49,7 +49,7 @@ class EvalConfig:
     CASE = str(ModelConfig.SEQ_LEN) + 'frames_ikala'
     CKPT_PATH = 'checkpoints/' + CASE
     GRAPH_PATH = 'graphs/' + CASE + '/eval'
-    DATA_PATH = 'dataset/eval/kpop'
+    DATA_PATH = 'dataset/mir-1k'
     # DATA_PATH = 'dataset/mir-1k/Wavfile'
     # DATA_PATH = 'dataset/ikala'
     GRIFFIN_LIM = False
